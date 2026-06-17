@@ -1,8 +1,8 @@
 // 1) Cole aqui a URL do Web App do Google Apps Script
-const WEB_APP_URL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxDaSukjGDZZ30lZBQoepHeSEAcWY9c4xGUnnnK9ZWw80l_gt3U4nKTvqIw-89mnIbejg/exec";
 
 // 2) Coloque aqui o WhatsApp da barbearia com DDD, somente números
-const WHATSAPP_BARBEARIA = "44999999999";
+const WHATSAPP_BARBEARIA = "44991469073";
 
 // 3) Serviços baseados no link informado
 const servicos = [
