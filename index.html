@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero1 Barbearia - Agendamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Zero1 Barbearia</h1>
+      <p>Agende seu horário de forma rápida pelo site.</p>
+      <a href="#agendamento" class="btn">Agendar agora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Serviços</h2>
+      <div id="servicos" class="grid"></div>
+    </section>
+
+    <section id="agendamento" class="card">
+      <h2>Agendamento</h2>
+
+      <form id="formAgendamento">
+        <label>Nome e sobrenome</label>
+        <input type="text" id="nome" required placeholder="Ex: João Silva" />
+
+        <label>Telefone / WhatsApp</label>
+        <input type="tel" id="telefone" required placeholder="Ex: 44999999999" />
+
+        <label>Barbeiro</label>
+        <select id="barbeiro" required>
+          <option value="">Selecione</option>
+          <option>Zero1 Barbearia</option>
+          <option>Barbeiro 1</option>
+          <option>Barbeiro 2</option>
+        </select>
+
+        <label>Serviço</label>
+        <select id="servico" required></select>
+
+        <label>Data</label>
+        <input type="date" id="data" required />
+
+        <label>Horário</label>
+        <select id="horario" required></select>
+
+        <label>Observação</label>
+        <textarea id="observacao" placeholder="Ex: preferência de atendimento, atraso, etc."></textarea>
+
+        <div class="pix">
+          <h3>Pagamento</h3>
+          <p><strong>Pix:</strong> informe-aqui-a-chave-pix</p>
+          <p><strong>Cartão:</strong> pagamento presencial na maquininha.</p>
+          <p><strong>Dinheiro:</strong> pagamento presencial.</p>
+        </div>
+
+        <button type="submit" class="btn full">Confirmar agendamento</button>
+      </form>
+
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Zero1 Barbearia • Agendamento online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
